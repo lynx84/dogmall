@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Crawling Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product url</th>
+      <th>Product name</th>
+      <th>Image url</th>
+      <th>Cost</th>
+      <th>Product info</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @crawling_products.each do |crawling_product| %>
+      <tr>
+        <td><%= crawling_product.product_url %></td>
+        <td><%= crawling_product.product_name %></td>
+        <td><%= crawling_product.image_url %></td>
+        <td><%= crawling_product.cost %></td>
+        <td><%= crawling_product.product_info %></td>
+        <td><%= link_to 'Show', crawling_product %></td>
+        <td><%= link_to 'Edit', edit_crawling_product_path(crawling_product) %></td>
+        <td><%= link_to 'Destroy', crawling_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Crawling Product', new_crawling_product_path %>
