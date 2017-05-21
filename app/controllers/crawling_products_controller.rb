@@ -69,6 +69,6 @@ class CrawlingProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def crawling_product_params
-      params.require(:crawling_product).permit(:product_url, :product_name, :image_url, :cost, :product_info)
+      params.require(:crawling_product).permit(:product_url, :product_name, :image_url, :cost, :product_info, :discount_per, :discount_cost)
     end
 end

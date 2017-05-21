@@ -480,3 +480,341 @@ Processing by CrawlingProductsController#index as HTML
 Completed 200 OK in 298ms (Views: 281.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:05:59 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+AbstractController::ActionNotFound (The action 'products' could not be found for ProductsController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/naseokhyeon/.rvm/gems/ruby-2.2.4@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/naseokhyeon/.rvm/gems/ruby-2.2.4@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (5.2ms)
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:06:59 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#products as HTML
+DEPRECATION WARNING: `render :text` is deprecated because it does not actually render a `text/plain` response. Switch to `render plain: 'plain text'` to render as `text/plain`, `render html: '<strong>HTML</strong>'` to render as `text/html`, or `render body: 'raw'` to match the deprecated behavior and render with the default Content-Type, which is `text/html`. (called from _normalize_render at /Users/naseokhyeon/.rvm/gems/ruby-2.2.4@global/gems/actionpack-5.0.2/lib/abstract_controller/rendering.rb:128)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:07:48 +0900
+Processing by ProductsController#products as HTML
+  [1m[36mCrawlingProduct Load (0.2ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:09:04 +0900
+Processing by ProductsController#products as HTML
+  [1m[36mCrawlingProduct Load (0.1ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:09:16 +0900
+Processing by ProductsController#products as HTML
+  [1m[36mCrawlingProduct Load (0.1ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:09:21 +0900
+Processing by ProductsController#products as HTML
+  [1m[36mCrawlingProduct Load (0.1ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-05-02 12:09:41 +0900
+Processing by ProductsController#products as HTML
+  [1m[36mCrawlingProduct Load (0.2ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-21 15:10:25 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/naseokhyeon/.rvm/gems/ruby-2.2.4@global/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/naseokhyeon/.rvm/gems/ruby-2.2.4@global/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 23ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/crawling_products" for 127.0.0.1 at 2017-05-21 15:10:29 +0900
+Processing by CrawlingProductsController#index as HTML
+  Rendering crawling_products/index.html.erb within layouts/application
+  [1m[36mCrawlingProduct Load (0.6ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+  Rendered crawling_products/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 390ms (Views: 383.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494577248"], ["product_name", "땡큐펫 수제 연어간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494577248/thumb-thumbitem_330x350.jpg"], ["cost", "2,300"], ["product_info", "원기회복과 모질개선에 좋은 천연 연어간식!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576790"], ["product_name", "땡큐펫 수제 오리간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576790/thumb-thumbitem_330x350.jpg"], ["cost", "3,000"], ["product_info", "필수 아미노산과 엽산 철분이 풍부하게 함유된 오리간식!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576532"], ["product_name", "땡큐펫 수제 참치간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576532/thumb-thumbitem_330x350.jpg"], ["cost", "6,900"], ["product_info", "오메가3와 각종 영양소가 풍부하게 함유된 참치간식!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494554087"], ["product_name", "땡큐펫 수제 닭간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494554087/thumb-thumbitem_330x350.jpg"], ["cost", "2,500"], ["product_info", "간식은 역시 치킨! 고단백 저칼로리 닭간식 시리즈"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553736"], ["product_name", "땡큐펫 수제간식 황태,명태"], ["image_url", "http://pettopet.co.kr/data/item/1494553736/thumb-thumbitem_330x350.jpg"], ["cost", "7,900"], ["product_info", "고급 영양간식 황태포와 명태포"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553314"], ["product_name", "떙큐펫 수제 돼지간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494553314/thumb-thumbitem_330x350.jpg"], ["cost", "1,500"], ["product_info", "씹는 즐거움 가득한! 국내산 돼지간식 시리즈"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494552937"], ["product_name", "땡큐펫 수제간식 연어파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494552937/thumb-thumbitem_330x350.jpg"], ["cost", "3,900"], ["product_info", "피부, 모질개선에 좋은 필수 건강보조 식품!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494497331"], ["product_name", "땡큐펫 수제간식 황태파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494497331/thumb-thumbitem_330x350.jpg"], ["cost", "4,900"], ["product_info", "고단백, 저칼로리, 원기회복에 좋은 황태파우더!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494496426"], ["product_name", "땡큐펫 수제간식 참치&MSM파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494496426/thumb-thumbitem_330x350.jpg"], ["cost", "5,900"], ["product_info", "셀레늄이 풍부하여 노화 예방에 좋은 참치&MSM파우더!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1482132331"], ["product_name", "아페토 도넛방석"], ["image_url", "http://pettopet.co.kr/data/item/1482132331/thumb-thumbitem_330x350.jpg"], ["cost", "26,250"], ["product_info", "누우면 떡실신 전설의 국민방석!"], ["created_at", 2017-05-21 06:11:27 UTC], ["updated_at", 2017-05-21 06:11:27 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/crawling_products" for 127.0.0.1 at 2017-05-21 15:11:30 +0900
+Processing by CrawlingProductsController#index as HTML
+  Rendering crawling_products/index.html.erb within layouts/application
+  [1m[36mCrawlingProduct Load (0.3ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+  Rendered crawling_products/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDiscountInfoToCrawlingProduct (20170521063441)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "crawling_products" ADD "discount_per" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "crawling_products" ADD "discount_cost" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170521063441"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_crawling_products_on_product_url' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_crawling_products_on_product_url' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494577248"], ["product_name", "땡큐펫 수제 연어간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494577248/thumb-thumbitem_330x350.jpg"], ["cost", "2,300"], ["product_info", "원기회복과 모질개선에 좋은 천연 연어간식!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576790"], ["product_name", "땡큐펫 수제 오리간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576790/thumb-thumbitem_330x350.jpg"], ["cost", "3,000"], ["product_info", "필수 아미노산과 엽산 철분이 풍부하게 함유된 오리간식!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576532"], ["product_name", "땡큐펫 수제 참치간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576532/thumb-thumbitem_330x350.jpg"], ["cost", "6,900"], ["product_info", "오메가3와 각종 영양소가 풍부하게 함유된 참치간식!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494554087"], ["product_name", "땡큐펫 수제 닭간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494554087/thumb-thumbitem_330x350.jpg"], ["cost", "2,500"], ["product_info", "간식은 역시 치킨! 고단백 저칼로리 닭간식 시리즈"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553736"], ["product_name", "땡큐펫 수제간식 황태,명태"], ["image_url", "http://pettopet.co.kr/data/item/1494553736/thumb-thumbitem_330x350.jpg"], ["cost", "7,900"], ["product_info", "고급 영양간식 황태포와 명태포"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553314"], ["product_name", "떙큐펫 수제 돼지간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494553314/thumb-thumbitem_330x350.jpg"], ["cost", "1,500"], ["product_info", "씹는 즐거움 가득한! 국내산 돼지간식 시리즈"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494552937"], ["product_name", "땡큐펫 수제간식 연어파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494552937/thumb-thumbitem_330x350.jpg"], ["cost", "3,900"], ["product_info", "피부, 모질개선에 좋은 필수 건강보조 식품!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494497331"], ["product_name", "땡큐펫 수제간식 황태파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494497331/thumb-thumbitem_330x350.jpg"], ["cost", "4,900"], ["product_info", "고단백, 저칼로리, 원기회복에 좋은 황태파우더!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494496426"], ["product_name", "땡큐펫 수제간식 참치&MSM파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494496426/thumb-thumbitem_330x350.jpg"], ["cost", "5,900"], ["product_info", "셀레늄이 풍부하여 노화 예방에 좋은 참치&MSM파우더!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1482132331"], ["product_name", "아페토 도넛방석"], ["image_url", "http://pettopet.co.kr/data/item/1482132331/thumb-thumbitem_330x350.jpg"], ["cost", "26,250"], ["product_info", "누우면 떡실신 전설의 국민방석!"], ["created_at", 2017-05-21 06:57:32 UTC], ["updated_at", 2017-05-21 06:57:32 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494577248"], ["product_name", "땡큐펫 수제 연어간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494577248/thumb-thumbitem_330x350.jpg"], ["cost", "2,300"], ["product_info", "원기회복과 모질개선에 좋은 천연 연어간식!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 4], ["discount_cost", "2,400 "]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576790"], ["product_name", "땡큐펫 수제 오리간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576790/thumb-thumbitem_330x350.jpg"], ["cost", "3,000"], ["product_info", "필수 아미노산과 엽산 철분이 풍부하게 함유된 오리간식!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 3], ["discount_cost", "3,100 "]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576532"], ["product_name", "땡큐펫 수제 참치간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576532/thumb-thumbitem_330x350.jpg"], ["cost", "6,900"], ["product_info", "오메가3와 각종 영양소가 풍부하게 함유된 참치간식!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 1], ["discount_cost", "7,000 "]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494554087"], ["product_name", "땡큐펫 수제 닭간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494554087/thumb-thumbitem_330x350.jpg"], ["cost", "2,500"], ["product_info", "간식은 역시 치킨! 고단백 저칼로리 닭간식 시리즈"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 4], ["discount_cost", "2,600 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553736"], ["product_name", "땡큐펫 수제간식 황태,명태"], ["image_url", "http://pettopet.co.kr/data/item/1494553736/thumb-thumbitem_330x350.jpg"], ["cost", "7,900"], ["product_info", "고급 영양간식 황태포와 명태포"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 1], ["discount_cost", "8,000 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553314"], ["product_name", "떙큐펫 수제 돼지간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494553314/thumb-thumbitem_330x350.jpg"], ["cost", "1,500"], ["product_info", "씹는 즐거움 가득한! 국내산 돼지간식 시리즈"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 6], ["discount_cost", "1,600 "]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494552937"], ["product_name", "땡큐펫 수제간식 연어파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494552937/thumb-thumbitem_330x350.jpg"], ["cost", "3,900"], ["product_info", "피부, 모질개선에 좋은 필수 건강보조 식품!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 3], ["discount_cost", "4,000 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494497331"], ["product_name", "땡큐펫 수제간식 황태파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494497331/thumb-thumbitem_330x350.jpg"], ["cost", "4,900"], ["product_info", "고단백, 저칼로리, 원기회복에 좋은 황태파우더!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 2], ["discount_cost", "5,000 "]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494496426"], ["product_name", "땡큐펫 수제간식 참치&MSM파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494496426/thumb-thumbitem_330x350.jpg"], ["cost", "5,900"], ["product_info", "셀레늄이 풍부하여 노화 예방에 좋은 참치&MSM파우더!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 2], ["discount_cost", "6,000 "]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1482132331"], ["product_name", "아페토 도넛방석"], ["image_url", "http://pettopet.co.kr/data/item/1482132331/thumb-thumbitem_330x350.jpg"], ["cost", "26,250"], ["product_info", "누우면 떡실신 전설의 국민방석!"], ["created_at", 2017-05-21 07:03:13 UTC], ["updated_at", 2017-05-21 07:03:13 UTC], ["discount_per", 25], ["discount_cost", "35,000 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCrawlingProducts (20170423074119)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "crawling_products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_url" varchar, "product_name" varchar, "image_url" varchar, "cost" varchar, "product_info" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_crawling_products_on_product_url" ON "crawling_products" ("product_url")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170423074119"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDiscountInfoToCrawlingProduct (20170521063441)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "crawling_products" ADD "discount_per" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "crawling_products" ADD "discount_cost" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170521063441"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-05-21 07:04:40 UTC], ["updated_at", 2017-05-21 07:04:40 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_crawling_products_on_product_url' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_crawling_products_on_product_url' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494577248"], ["product_name", "땡큐펫 수제 연어간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494577248/thumb-thumbitem_330x350.jpg"], ["cost", "2,300"], ["product_info", "원기회복과 모질개선에 좋은 천연 연어간식!"], ["created_at", 2017-05-21 07:04:47 UTC], ["updated_at", 2017-05-21 07:04:47 UTC], ["discount_per", 4], ["discount_cost", "2,400 "]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576790"], ["product_name", "땡큐펫 수제 오리간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576790/thumb-thumbitem_330x350.jpg"], ["cost", "3,000"], ["product_info", "필수 아미노산과 엽산 철분이 풍부하게 함유된 오리간식!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 3], ["discount_cost", "3,100 "]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576532"], ["product_name", "땡큐펫 수제 참치간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576532/thumb-thumbitem_330x350.jpg"], ["cost", "6,900"], ["product_info", "오메가3와 각종 영양소가 풍부하게 함유된 참치간식!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 1], ["discount_cost", "7,000 "]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494554087"], ["product_name", "땡큐펫 수제 닭간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494554087/thumb-thumbitem_330x350.jpg"], ["cost", "2,500"], ["product_info", "간식은 역시 치킨! 고단백 저칼로리 닭간식 시리즈"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 4], ["discount_cost", "2,600 "]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553736"], ["product_name", "땡큐펫 수제간식 황태,명태"], ["image_url", "http://pettopet.co.kr/data/item/1494553736/thumb-thumbitem_330x350.jpg"], ["cost", "7,900"], ["product_info", "고급 영양간식 황태포와 명태포"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 1], ["discount_cost", "8,000 "]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553314"], ["product_name", "떙큐펫 수제 돼지간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494553314/thumb-thumbitem_330x350.jpg"], ["cost", "1,500"], ["product_info", "씹는 즐거움 가득한! 국내산 돼지간식 시리즈"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 6], ["discount_cost", "1,600 "]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494552937"], ["product_name", "땡큐펫 수제간식 연어파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494552937/thumb-thumbitem_330x350.jpg"], ["cost", "3,900"], ["product_info", "피부, 모질개선에 좋은 필수 건강보조 식품!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 3], ["discount_cost", "4,000 "]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494497331"], ["product_name", "땡큐펫 수제간식 황태파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494497331/thumb-thumbitem_330x350.jpg"], ["cost", "4,900"], ["product_info", "고단백, 저칼로리, 원기회복에 좋은 황태파우더!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 2], ["discount_cost", "5,000 "]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494496426"], ["product_name", "땡큐펫 수제간식 참치&MSM파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494496426/thumb-thumbitem_330x350.jpg"], ["cost", "5,900"], ["product_info", "셀레늄이 풍부하여 노화 예방에 좋은 참치&MSM파우더!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 2], ["discount_cost", "6,000 "]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1482132331"], ["product_name", "아페토 도넛방석"], ["image_url", "http://pettopet.co.kr/data/item/1482132331/thumb-thumbitem_330x350.jpg"], ["cost", "26,250"], ["product_info", "누우면 떡실신 전설의 국민방석!"], ["created_at", 2017-05-21 07:04:48 UTC], ["updated_at", 2017-05-21 07:04:48 UTC], ["discount_per", 25], ["discount_cost", "35,000 "]]
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494577248"], ["product_name", "땡큐펫 수제 연어간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494577248/thumb-thumbitem_330x350.jpg"], ["cost", "2,300"], ["product_info", "원기회복과 모질개선에 좋은 천연 연어간식!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4\t\t\t\t\t\t\t"], ["discount_cost", "2,400 "]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576790"], ["product_name", "땡큐펫 수제 오리간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576790/thumb-thumbitem_330x350.jpg"], ["cost", "3,000"], ["product_info", "필수 아미노산과 엽산 철분이 풍부하게 함유된 오리간식!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3\t\t\t\t\t\t\t"], ["discount_cost", "3,100 "]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494576532"], ["product_name", "땡큐펫 수제 참치간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494576532/thumb-thumbitem_330x350.jpg"], ["cost", "6,900"], ["product_info", "오메가3와 각종 영양소가 풍부하게 함유된 참치간식!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t\t\t\t\t\t\t"], ["discount_cost", "7,000 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494554087"], ["product_name", "땡큐펫 수제 닭간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494554087/thumb-thumbitem_330x350.jpg"], ["cost", "2,500"], ["product_info", "간식은 역시 치킨! 고단백 저칼로리 닭간식 시리즈"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4\t\t\t\t\t\t\t"], ["discount_cost", "2,600 "]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553736"], ["product_name", "땡큐펫 수제간식 황태,명태"], ["image_url", "http://pettopet.co.kr/data/item/1494553736/thumb-thumbitem_330x350.jpg"], ["cost", "7,900"], ["product_info", "고급 영양간식 황태포와 명태포"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t\t\t\t\t\t\t"], ["discount_cost", "8,000 "]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494553314"], ["product_name", "떙큐펫 수제 돼지간식 시리즈"], ["image_url", "http://pettopet.co.kr/data/item/1494553314/thumb-thumbitem_330x350.jpg"], ["cost", "1,500"], ["product_info", "씹는 즐거움 가득한! 국내산 돼지간식 시리즈"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6\t\t\t\t\t\t\t"], ["discount_cost", "1,600 "]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494552937"], ["product_name", "땡큐펫 수제간식 연어파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494552937/thumb-thumbitem_330x350.jpg"], ["cost", "3,900"], ["product_info", "피부, 모질개선에 좋은 필수 건강보조 식품!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3\t\t\t\t\t\t\t"], ["discount_cost", "4,000 "]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494497331"], ["product_name", "땡큐펫 수제간식 황태파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494497331/thumb-thumbitem_330x350.jpg"], ["cost", "4,900"], ["product_info", "고단백, 저칼로리, 원기회복에 좋은 황태파우더!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2\t\t\t\t\t\t\t"], ["discount_cost", "5,000 "]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1494496426"], ["product_name", "땡큐펫 수제간식 참치&MSM파우더"], ["image_url", "http://pettopet.co.kr/data/item/1494496426/thumb-thumbitem_330x350.jpg"], ["cost", "5,900"], ["product_info", "셀레늄이 풍부하여 노화 예방에 좋은 참치&MSM파우더!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2\t\t\t\t\t\t\t"], ["discount_cost", "6,000 "]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "crawling_products" ("product_url", "product_name", "image_url", "cost", "product_info", "created_at", "updated_at", "discount_per", "discount_cost") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["product_url", "http://pettopet.co.kr/shop/page_move.php?it_id=1482132331"], ["product_name", "아페토 도넛방석"], ["image_url", "http://pettopet.co.kr/data/item/1482132331/thumb-thumbitem_330x350.jpg"], ["cost", "26,250"], ["product_info", "누우면 떡실신 전설의 국민방석!"], ["created_at", 2017-05-21 07:05:39 UTC], ["updated_at", 2017-05-21 07:05:39 UTC], ["discount_per", "\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25\t\t\t\t\t\t\t"], ["discount_cost", "35,000 "]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/crawling_products" for 127.0.0.1 at 2017-05-21 16:11:24 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CrawlingProductsController#index as HTML
+  Rendering crawling_products/index.html.erb within layouts/application
+  [1m[36mCrawlingProduct Load (0.2ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+  Rendered crawling_products/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 232ms (Views: 208.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/crawling_products" for 127.0.0.1 at 2017-05-21 16:30:37 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CrawlingProductsController#index as HTML
+  Rendering crawling_products/index.html.erb within layouts/application
+  [1m[36mCrawlingProduct Load (0.2ms)[0m  [1m[34mSELECT "crawling_products".* FROM "crawling_products"[0m
+  Rendered crawling_products/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 325ms (Views: 312.9ms | ActiveRecord: 0.5ms)
+
+

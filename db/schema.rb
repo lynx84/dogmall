@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423074119) do
+ActiveRecord::Schema.define(version: 20170521063441) do
 
   create_table "crawling_products", force: :cascade do |t|
     t.string   "product_url"
@@ -18,8 +18,10 @@ ActiveRecord::Schema.define(version: 20170423074119) do
     t.string   "image_url"
     t.string   "cost"
     t.string   "product_info"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "discount_per"
+    t.string   "discount_cost"
     t.index ["product_url"], name: "index_crawling_products_on_product_url", unique: true
   end
 
